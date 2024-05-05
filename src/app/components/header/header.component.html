@@ -1,0 +1,37 @@
+<div class="wrap">
+    <header id="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <button id="primary-nav-button" type="button">Menu</button>
+            <a href="index.html">
+              <div class="logo">
+                <!-- <img src="assets/img/logo.png" alt="Venue Logo"> -->
+              </div>
+            </a>
+            <nav id="primary-nav" class="dropdown cf">
+              <ul class="dropdown menu">
+                <li class='active' routerLink="overview"><a>Home</a></li>
+                <li *ngIf="userRole === 'manager' || userRole === 'rh'" (click)="onDashboardClick('driver')">
+                  <a>Driver Dashboard</a>
+                </li>
+                <li *ngIf="userRole === 'manager' || userRole === 'rh'" (click)="onDashboardClick('client')">
+                  <a>Client Dashboard</a>
+                </li>
+                <li *ngIf="userRole === 'manager' || userRole === 'partner'"><a>Partner Dashboard</a></li>
+                <li *ngIf="userRole === 'manager' || userRole === 'vehicle'"><a>Vehicle Dashboard</a></li>
+                <li *ngIf="userRole === 'manager' || userRole === 'financial'">
+                  <a routerLink="financial" class="nav-link">Finance Dashboard</a>
+                </li>
+                <li *ngIf="!userRole"><a class="nav-link" routerLink="/">Login</a></li>
+                <li *ngIf="userRole"><a class="nav-link" (click)="onLogout()" routerLink="">Log Out</a></li>
+              </ul>
+            </nav><!-- / #primary-nav -->
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+  
+  <div #container></div>
+  

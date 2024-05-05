@@ -1,0 +1,25 @@
+<div class="wrap">
+    <header id="header">
+      <!-- Header content -->
+    </header>
+  
+    <section class="banner banner-secondary" id="top" style="background-image: url(assets/img/banner-image-3-1920x300.jpg);">
+      <!-- Banner content -->
+    </section>
+  
+    <main>
+      <section class="popular-places">
+        <div class="contact-content">
+          <div *ngIf="!showDriverDashboard">
+            <!-- Embed PowerBI report or other content -->
+            <iframe id="powerBIReport" title="PIDashboard" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=35b48495-d677-4ea5-9193-9313b1d565e4&autoAuth=true&ctid=604f1a96-cbe8-43f8-abbf-f8eaf5d85730&navContentPaneEnabled=false&filterPaneEnabled=false&pageName=ReportSection8c261a7a0662307343b8" frameborder="0" allowFullScreen="true"></iframe>
+          </div>
+          <div *ngIf="showDriverDashboard">
+            <!-- Display Driver Dashboard component -->
+            <app-driver-dashboard></app-driver-dashboard>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  
