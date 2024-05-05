@@ -9,6 +9,7 @@ import { PartnerComponent } from './components/partner/partner.component';
 import { ManagerComponent } from './components/manager/manager.component';
 import { OverviewComponent } from './components/overview/overview.component';
 import { PredictComponent } from './components/predict/predict.component';
+import { CostPredictionComponent } from './components/cost-prediction/cost-prediction.component';
 
 const routes: Routes = [{path:'',component:HomeComponent},
 {path:'login',component:LoginComponent},
@@ -19,6 +20,7 @@ const routes: Routes = [{path:'',component:HomeComponent},
 {path:'manager',component:ManagerComponent},
 {path:'overview',component:OverviewComponent},
 {path:'predict',component:PredictComponent},
+{path:'costprediction',component:CostPredictionComponent},
 
 
 

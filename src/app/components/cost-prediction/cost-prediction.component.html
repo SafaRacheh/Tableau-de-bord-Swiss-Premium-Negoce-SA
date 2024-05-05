@@ -1,0 +1,18 @@
+<div>
+    <h2>Cost Prediction</h2>
+    <form (submit)="onSubmit()">
+      <div>
+        <label for="year">Year:</label>
+        <input type="number" id="year" name="year" [(ngModel)]="year" required>
+      </div>
+      <div>
+        <label for="month">Month:</label>
+        <input type="number" id="month" name="month" [(ngModel)]="month" required>
+      </div>
+      <button type="submit">Predict Cost</button>
+    </form>
+    <div *ngIf="predictedCost !== undefined">
+      <p>Predicted Cost: {{ predictedCost }}</p>
+    </div>
+  </div>
+  

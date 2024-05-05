@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CO2Component } from './co2.component';
+import { CostPredictionComponent } from './cost-prediction.component';
 
-describe('CO2Component', () => {
-  let component: CO2Component;
-  let fixture: ComponentFixture<CO2Component>;
+describe('CostPredictionComponent', () => {
+  let component: CostPredictionComponent;
+  let fixture: ComponentFixture<CostPredictionComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CO2Component ]
+      declarations: [ CostPredictionComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(CO2Component);
+    fixture = TestBed.createComponent(CostPredictionComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
