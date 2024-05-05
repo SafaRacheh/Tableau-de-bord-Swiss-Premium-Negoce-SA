@@ -17,6 +17,11 @@ import { ManagerComponent } from './components/manager/manager.component';
 import { OverviewComponent } from './components/overview/overview.component';
 import { ClientDashboardComponent } from './components/client-dashboard/client-dashboard.component';
 import { DriverDashboardComponent } from './components/driver-dashboard/driver-dashboard.component';
+import { PredictComponent } from './components/predict/predict.component';
+import { CO2Component } from './components/co2/co2.component';
+import { HttpClientModule } from '@angular/common/http';
+
+
 
 @NgModule({
   declarations: [
@@ -33,12 +38,15 @@ import { DriverDashboardComponent } from './components/driver-dashboard/driver-d
     OverviewComponent,
     ClientDashboardComponent,
     DriverDashboardComponent,
+    PredictComponent,
+    CO2Component,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
-    
+    FormsModule,
+    HttpClientModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

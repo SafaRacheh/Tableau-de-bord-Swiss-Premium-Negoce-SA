@@ -1,0 +1,26 @@
+<div>
+    <label for="input1">Input 1:</label>
+    <input type="number" id="input1" [(ngModel)]="input1">
+  </div>
+  <div>
+    <label for="input2">Input 2:</label>
+    <input type="number" id="input2" [(ngModel)]="input2">
+  </div>
+  <div>
+    <label for="input3">Input 3:</label>
+    <input type="number" id="input3" [(ngModel)]="input3">
+  </div>
+  <div>
+    <label for="input4">Input 4:</label>
+    <input type="number" id="input4" [(ngModel)]="input4">
+  </div>
+  <div>
+    <label for="input5">Input 5:</label>
+    <input type="number" id="input5" [(ngModel)]="input5">
+  </div>
+  <button (click)="onSubmit()">Predict</button>
+  
+  <div *ngIf="predictionResult !== undefined">
+    <p>Prediction Result: {{ predictionResult }}</p>
+  </div>
+  

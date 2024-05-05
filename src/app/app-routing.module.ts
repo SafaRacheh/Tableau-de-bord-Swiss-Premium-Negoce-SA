@@ -8,6 +8,7 @@ import { FinancialComponent } from './components/financial/financial.component';
 import { PartnerComponent } from './components/partner/partner.component';
 import { ManagerComponent } from './components/manager/manager.component';
 import { OverviewComponent } from './components/overview/overview.component';
+import { PredictComponent } from './components/predict/predict.component';
 
 const routes: Routes = [{path:'',component:HomeComponent},
 {path:'login',component:LoginComponent},
@@ -16,7 +17,8 @@ const routes: Routes = [{path:'',component:HomeComponent},
 {path:'financial',component:FinancialComponent},
 {path:'partner',component:PartnerComponent},
 {path:'manager',component:ManagerComponent},
-{path:'overview',component:OverviewComponent}
+{path:'overview',component:OverviewComponent},
+{path:'predict',component:PredictComponent},
 
 
 
